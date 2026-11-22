@@ -21,9 +21,3 @@ Use fictional test credentials rather than real passwords.
 
 PASSWORD SECURITY
 Passwords are salted and hashed with PBKDF2-HMAC-SHA256, using 600,000 iterations, a random 16-byte salt, and a 32-byte hash. Hashing is one-way, rather than reversible encryption. SQL statements use parameters; a unique constraint prevents duplicate usernames.
-
-REFERENCES
-OWASP Password Storage Cheat Sheet:
-https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
-Microsoft Rfc2898DeriveBytes constructor (.NET Framework 4.8):
-https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.rfc2898derivebytes.-ctor?view=netframework-4.8
